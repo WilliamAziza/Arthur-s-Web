@@ -1,3 +1,6 @@
+import ContactForm from "./components/ContactForm";
+import WhatsAppButton from "./components/WhatsAppButton";
+
 export default function Home() {
   return (
     <div className="flex flex-col flex-1">
@@ -9,6 +12,7 @@ export default function Home() {
           </a>
           <nav className="hidden gap-8 text-sm font-medium text-muted sm:flex">
             <a href="#services" className="transition-colors hover:text-primary">Services</a>
+            <a href="#pricing" className="transition-colors hover:text-primary">Pricing</a>
             <a href="#about" className="transition-colors hover:text-primary">About</a>
             <a href="#contact" className="transition-colors hover:text-primary">Contact</a>
           </nav>
@@ -206,6 +210,186 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ===== Pricing Section ===== */}
+      <section id="pricing" className="bg-white px-6 py-20 sm:py-28">
+        <div className="mx-auto max-w-6xl">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+              Simple, Transparent Pricing
+            </h2>
+            <p className="mx-auto mt-4 max-w-lg text-lg text-muted">
+              Choose the package that fits your needs. No hidden fees — just
+              quality websites at fair prices.
+            </p>
+          </div>
+          <div className="mt-14 grid gap-8 lg:grid-cols-3">
+            {/* Starter */}
+            <div className="flex flex-col rounded-2xl border border-border bg-surface p-8 transition-all hover:border-primary/20 hover:shadow-lg">
+              <h3 className="text-lg font-semibold text-primary">Starter</h3>
+              <p className="mt-2 text-sm text-muted">
+                Perfect for personal brands &amp; small businesses
+              </p>
+              <div className="mt-6 flex items-baseline gap-1">
+                <span className="text-4xl font-bold text-primary">$299</span>
+                <span className="text-sm text-muted">/project</span>
+              </div>
+              <ul className="mt-6 flex-1 space-y-3 text-sm text-muted">
+                <li className="flex items-center gap-2">
+                  <svg className="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  1-page website
+                </li>
+                <li className="flex items-center gap-2">
+                  <svg className="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Mobile responsive design
+                </li>
+                <li className="flex items-center gap-2">
+                  <svg className="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Basic SEO setup
+                </li>
+                <li className="flex items-center gap-2">
+                  <svg className="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Contact form
+                </li>
+                <li className="flex items-center gap-2">
+                  <svg className="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  1 month free support
+                </li>
+              </ul>
+              <a
+                href="#contact"
+                className="mt-8 rounded-full border border-primary px-6 py-3 text-center text-sm font-semibold text-primary transition-all hover:bg-primary hover:text-white"
+              >
+                Get Started
+              </a>
+            </div>
+
+            {/* Business (Popular) */}
+            <div className="relative flex flex-col rounded-2xl border-2 border-primary bg-white p-8 shadow-xl transition-all hover:shadow-2xl">
+              <span className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-accent px-4 py-1 text-xs font-bold uppercase tracking-wide text-white">
+                Most Popular
+              </span>
+              <h3 className="text-lg font-semibold text-primary">Business</h3>
+              <p className="mt-2 text-sm text-muted">
+                For growing businesses that need more
+              </p>
+              <div className="mt-6 flex items-baseline gap-1">
+                <span className="text-4xl font-bold text-primary">$799</span>
+                <span className="text-sm text-muted">/project</span>
+              </div>
+              <ul className="mt-6 flex-1 space-y-3 text-sm text-muted">
+                <li className="flex items-center gap-2">
+                  <svg className="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Up to 5 pages
+                </li>
+                <li className="flex items-center gap-2">
+                  <svg className="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Custom design &amp; branding
+                </li>
+                <li className="flex items-center gap-2">
+                  <svg className="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  CMS (manage content yourself)
+                </li>
+                <li className="flex items-center gap-2">
+                  <svg className="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Advanced SEO
+                </li>
+                <li className="flex items-center gap-2">
+                  <svg className="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Google Analytics setup
+                </li>
+                <li className="flex items-center gap-2">
+                  <svg className="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  3 months free support
+                </li>
+              </ul>
+              <a
+                href="#contact"
+                className="mt-8 rounded-full bg-primary px-6 py-3 text-center text-sm font-semibold text-white transition-all hover:bg-primary-light"
+              >
+                Get Started
+              </a>
+            </div>
+
+            {/* Enterprise */}
+            <div className="flex flex-col rounded-2xl border border-border bg-surface p-8 transition-all hover:border-primary/20 hover:shadow-lg">
+              <h3 className="text-lg font-semibold text-primary">Enterprise</h3>
+              <p className="mt-2 text-sm text-muted">
+                Custom solutions for large-scale needs
+              </p>
+              <div className="mt-6 flex items-baseline gap-1">
+                <span className="text-4xl font-bold text-primary">Custom</span>
+              </div>
+              <ul className="mt-6 flex-1 space-y-3 text-sm text-muted">
+                <li className="flex items-center gap-2">
+                  <svg className="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Unlimited pages
+                </li>
+                <li className="flex items-center gap-2">
+                  <svg className="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  E-commerce / web app
+                </li>
+                <li className="flex items-center gap-2">
+                  <svg className="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Custom integrations
+                </li>
+                <li className="flex items-center gap-2">
+                  <svg className="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Dedicated project manager
+                </li>
+                <li className="flex items-center gap-2">
+                  <svg className="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Ongoing maintenance
+                </li>
+                <li className="flex items-center gap-2">
+                  <svg className="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  Priority support
+                </li>
+              </ul>
+              <a
+                href="#contact"
+                className="mt-8 rounded-full border border-primary px-6 py-3 text-center text-sm font-semibold text-primary transition-all hover:bg-primary hover:text-white"
+              >
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ===== Contact Section ===== */}
       <section id="contact" className="bg-white px-6 py-20 sm:py-28">
         <div className="mx-auto max-w-6xl">
@@ -217,53 +401,9 @@ export default function Home() {
               Ready to take your online presence to the next level? Get in touch
               and let&apos;s discuss your project.
             </p>
-</div>
+          </div>
           <div className="mx-auto mt-12 max-w-xl">
-            <form
-              className="space-y-6"
-            >
-              <div className="grid gap-6 sm:grid-cols-2">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-primary">
-                    Your Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    placeholder="John Doe"
-                    className="mt-1.5 block w-full rounded-lg border border-border bg-surface px-4 py-3 text-sm placeholder:text-muted focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-primary">
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    placeholder="john@example.com"
-                    className="mt-1.5 block w-full rounded-lg border border-border bg-surface px-4 py-3 text-sm placeholder:text-muted focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
-                  />
-                </div>
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-primary">
-                  Your Message
-                </label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  placeholder="Tell us about your project..."
-                  className="mt-1.5 block w-full rounded-lg border border-border bg-surface px-4 py-3 text-sm placeholder:text-muted focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
-                />
-              </div>
-              <button
-                type="submit"
-                className="w-full rounded-full bg-primary px-8 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:bg-primary-light hover:shadow-xl"
-              >
-                Send Message
-              </button>
-            </form>
+            <ContactForm />
             <div className="mt-10 flex flex-col items-center gap-3 text-sm text-muted sm:flex-row sm:justify-center">
               <span className="flex items-center gap-2">
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -294,6 +434,9 @@ export default function Home() {
             <a href="#services" className="transition-colors hover:text-white">
               Services
             </a>
+            <a href="#pricing" className="transition-colors hover:text-white">
+              Pricing
+            </a>
             <a href="#about" className="transition-colors hover:text-white">
               About
             </a>
@@ -303,6 +446,9 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* ===== WhatsApp Floating Button ===== */}
+      <WhatsAppButton />
     </div>
   );
 }
