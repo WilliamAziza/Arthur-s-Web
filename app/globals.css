@@ -16,16 +16,16 @@
 }
 
 .dark {
-  --color-background: #09111d;
-  --color-foreground: #e2e8f0;
+  --color-background: #070f1b;
+  --color-foreground: #edf6ff;
   --color-primary: #edf6ff;
-  --color-primary-light: #bfdcff;
+  --color-primary-light: #d8ebff;
   --color-accent: #f7b267;
   --color-accent-light: #f28b3d;
-  --color-muted: #93a4bb;
-  --color-surface: #101b2d;
-  --color-border: #1a2b42;
-  --color-card: #0d1728;
+  --color-muted: #acbbcf;
+  --color-surface: #101d2f;
+  --color-border: #21334d;
+  --color-card: #0c1728;
 }
 
 @theme inline {
@@ -55,11 +55,18 @@ body {
   font-family: var(--font-sans, Arial, Helvetica, sans-serif);
 }
 
+.dark {
+  background: #070f1b;
+}
+
 .dark .bg-white,
 .dark .bg-white\/80,
 .dark .bg-white\/90,
-.dark .bg-surface {
-  background-color: var(--color-surface);
+.dark .bg-surface,
+.dark [class*="bg-white"],
+.dark section.bg-white,
+.dark section.bg-surface {
+  background-color: var(--color-surface) !important;
 }
 
 .dark .text-primary {

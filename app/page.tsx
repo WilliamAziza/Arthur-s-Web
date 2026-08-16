@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="flex flex-col flex-1">
       {/* ===== Header / Nav ===== */}
-      <header className="sticky top-0 z-50 border-b border-border bg-white/80 backdrop-blur-md dark:bg-slate-950/80">
+      <header className="sticky top-0 z-50 border-b border-border bg-[#0f1c2c]/95 backdrop-blur-md dark:bg-[#0b1422]/95">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <a href="/" className="text-xl font-bold tracking-tight text-primary">
             Arthur&apos;s<span className="text-accent">Web</span>
@@ -30,7 +30,7 @@ export default function Home() {
       </header>
 
       {/* ===== Hero Section ===== */}
-      <section className="relative overflow-hidden px-6 py-24 sm:py-32">
+      <section className="relative overflow-hidden bg-[#edf3fb] px-6 py-24 sm:py-32 dark:bg-[radial-gradient(circle_at_top,_rgba(247,178,103,0.14),_transparent_18%),linear-gradient(135deg,#0a1423_0%,#0d1d30_50%,#111f35_100%)]">
         <div className="mx-auto max-w-6xl">
           <div className="grid items-center gap-12 lg:grid-cols-[1.12fr_0.88fr]">
             <div className="relative z-10 text-center lg:text-left">
@@ -168,7 +168,7 @@ export default function Home() {
       </section>
 
       {/* ===== Services Section ===== */}
-      <section id="services" className="bg-white px-6 py-20 sm:py-28 dark:bg-[#0b1422]">
+      <section id="services" className="bg-[#edf3fb] px-6 py-20 sm:py-28 dark:bg-[#0d1728]">
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
@@ -267,7 +267,7 @@ export default function Home() {
       </section>
 
       {/* ===== About Section ===== */}
-      <section id="about" className="bg-surface px-6 py-20 sm:py-28 dark:bg-[#0b1422]">
+      <section id="about" className="bg-[#edf3fb] px-6 py-20 sm:py-28 dark:bg-[#0d1728]">
         <div className="mx-auto max-w-6xl">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             <div>
@@ -318,7 +318,7 @@ export default function Home() {
       </section>
 
       {/* ===== Why Choose Us ===== */}
-      <section id="why-us" className="bg-white px-6 py-20 sm:py-28 dark:bg-[#0b1422]">
+      <section id="why-us" className="bg-[#edf3fb] px-6 py-20 sm:py-28 dark:bg-[#0d1728]">
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
@@ -370,7 +370,7 @@ export default function Home() {
       </section>
 
       {/* ===== Testimonials ===== */}
-      <section className="bg-surface px-6 py-20 sm:py-28 dark:bg-[#0b1422]">
+      <section className="bg-[#edf3fb] px-6 py-20 sm:py-28 dark:bg-[#0d1728]">
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
@@ -463,7 +463,7 @@ export default function Home() {
       </section>
 
       {/* ===== Pricing Section ===== */}
-      <section id="pricing" className="bg-white px-6 py-20 sm:py-28 dark:bg-[#0b1422]">
+      <section id="pricing" className="bg-[#edf3fb] px-6 py-20 sm:py-28 dark:bg-[#0d1728]">
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
@@ -643,7 +643,7 @@ export default function Home() {
       </section>
 
       {/* ===== Contact Section ===== */}
-      <section id="contact" className="bg-white px-6 py-20 sm:py-28 dark:bg-[#0b1422]">
+      <section id="contact" className="bg-[#edf3fb] px-6 py-20 sm:py-28 dark:bg-[#0d1728]">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
