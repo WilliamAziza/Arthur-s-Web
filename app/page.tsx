@@ -1,11 +1,12 @@
 import ContactForm from "./components/ContactForm";
+import ThemeToggle from "./components/ThemeToggle";
 import WhatsAppButton from "./components/WhatsAppButton";
 
 export default function Home() {
   return (
     <div className="flex flex-col flex-1">
       {/* ===== Header / Nav ===== */}
-      <header className="sticky top-0 z-50 border-b border-border bg-white/80 backdrop-blur-md">
+      <header className="sticky top-0 z-50 border-b border-border bg-white/80 backdrop-blur-md dark:bg-slate-950/80">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <a href="/" className="text-xl font-bold tracking-tight text-primary">
             Arthur&apos;s<span className="text-accent">Web</span>
@@ -16,12 +17,15 @@ export default function Home() {
             <a href="#about" className="transition-colors hover:text-primary">About</a>
             <a href="#contact" className="transition-colors hover:text-primary">Contact</a>
           </nav>
-          <a
-            href="#contact"
-            className="rounded-full bg-primary px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-primary-light"
-          >
-            Get a Quote
-          </a>
+          <div className="flex items-center gap-3">
+            <ThemeToggle />
+            <a
+              href="#contact"
+              className="rounded-full bg-primary px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-primary-light"
+            >
+              Get a Quote
+            </a>
+          </div>
         </div>
       </header>
 
