@@ -13,9 +13,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Arthur's Web | IT Solutions & Website Development",
+  title: "Arthur's Web | Web Development & IT Solutions",
   description:
-    "Arthur's Web provides professional IT solutions and custom website development. We build modern, fast, and scalable websites for businesses and individuals.",
+    "Arthur's Web builds fast, modern websites and IT solutions for businesses that want to grow online with a professional digital presence.",
+  keywords: [
+    "web development",
+    "IT solutions",
+    "website design",
+    "business website",
+    "digital strategy",
+    "custom web apps",
+  ],
+  openGraph: {
+    title: "Arthur's Web | Web Development & IT Solutions",
+    description:
+      "Fast, modern websites and IT solutions built to help businesses grow online.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

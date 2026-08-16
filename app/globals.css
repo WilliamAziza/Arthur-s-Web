@@ -14,10 +14,18 @@
   --font-mono: var(--font-geist-mono);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--color-background);
   color: var(--color-foreground);
   font-family: var(--font-sans, Arial, Helvetica, sans-serif);
+}
+
+::selection {
+  background: rgba(30, 58, 95, 0.18);
 }
 
 @layer utilities {

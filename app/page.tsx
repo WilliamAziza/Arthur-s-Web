@@ -210,6 +210,151 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ===== Why Choose Us ===== */}
+      <section id="why-us" className="bg-white px-6 py-20 sm:py-28">
+        <div className="mx-auto max-w-6xl">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+              Why Businesses Choose Arthur&apos;s Web
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-muted">
+              We combine strategy, design, and technical execution to create digital experiences that are built to perform.
+            </p>
+          </div>
+
+          <div className="mt-14 grid gap-8 md:grid-cols-3">
+            <div className="rounded-2xl border border-border bg-surface p-8">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary text-white">
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75A2.25 2.25 0 016 4.5h12a2.25 2.25 0 012.25 2.25v10.5A2.25 2.25 0 0118 19.5H6a2.25 2.25 0 01-2.25-2.25V6.75zm0 0l9 6.75 9-6.75" />
+                </svg>
+              </div>
+              <h3 className="mt-6 text-xl font-semibold text-primary">Clear Communication</h3>
+              <p className="mt-3 leading-relaxed text-muted">
+                You stay informed from the first brief to final launch, with practical guidance at every stage.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-border bg-surface p-8">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary text-white">
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v18m9-9h-18M5.25 5.25l13.5 13.5M18.75 5.25L5.25 18.75" />
+                </svg>
+              </div>
+              <h3 className="mt-6 text-xl font-semibold text-primary">Custom, Not Cookie-Cutter</h3>
+              <p className="mt-3 leading-relaxed text-muted">
+                Every project is tailored around your business goals, audience, and brand identity.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-border bg-surface p-8">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary text-white">
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="mt-6 text-xl font-semibold text-primary">Support After Launch</h3>
+              <p className="mt-3 leading-relaxed text-muted">
+                We help you keep your website secure, accurate, and optimized long after it goes live.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== Testimonials ===== */}
+      <section className="bg-surface px-6 py-20 sm:py-28">
+        <div className="mx-auto max-w-6xl">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+              What Clients Say
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-muted">
+              Real feedback from businesses that wanted a website that looked strong and worked hard.
+            </p>
+          </div>
+
+          <div className="mt-14 grid gap-8 lg:grid-cols-3">
+            <div className="rounded-2xl border border-border bg-white p-8 shadow-sm">
+              <div className="flex gap-1 text-accent">
+                {[...Array(5)].map((_, index) => (
+                  <svg key={index} className="h-5 w-5 fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.785.57-1.84-.197-1.54-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.027 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="mt-6 text-base leading-relaxed text-muted">
+                “Arthur&apos;s Web transformed our online presence. We finally have a website that feels premium and drives real inquiries.”
+              </p>
+              <div className="mt-6 border-t border-border pt-4">
+                <p className="font-semibold text-primary">Ada Mensah</p>
+                <p className="text-sm text-muted">Founder, BrightPath Studio</p>
+              </div>
+            </div>
+
+            <div className="rounded-2xl border border-border bg-white p-8 shadow-sm">
+              <div className="flex gap-1 text-accent">
+                {[...Array(5)].map((_, index) => (
+                  <svg key={index} className="h-5 w-5 fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.785.57-1.84-.197-1.54-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.027 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="mt-6 text-base leading-relaxed text-muted">
+                “The process was smooth, transparent, and professional. We launched faster than expected and the website continues to support our growth.”
+              </p>
+              <div className="mt-6 border-t border-border pt-4">
+                <p className="font-semibold text-primary">Kwame Boateng</p>
+                <p className="text-sm text-muted">Director, K-Prime Logistics</p>
+              </div>
+            </div>
+
+            <div className="rounded-2xl border border-border bg-white p-8 shadow-sm">
+              <div className="flex gap-1 text-accent">
+                {[...Array(5)].map((_, index) => (
+                  <svg key={index} className="h-5 w-5 fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.785.57-1.84-.197-1.54-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.027 8.72c-.783-.57-.38-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="mt-6 text-base leading-relaxed text-muted">
+                “A thoughtful team that listened to our needs and delivered a polished digital experience. The support after launch has been excellent.”
+              </p>
+              <div className="mt-6 border-t border-border pt-4">
+                <p className="font-semibold text-primary">Naa Ofori</p>
+                <p className="text-sm text-muted">Owner, Naa &amp; Co.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== Process ===== */}
+      <section className="bg-white px-6 py-20 sm:py-28">
+        <div className="mx-auto max-w-6xl">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+              A Simple Process That Gets Results
+            </h2>
+          </div>
+
+          <div className="mt-14 grid gap-8 md:grid-cols-4">
+            {[
+              { step: "01", title: "Discover", text: "We learn your goals, audience, and business needs." },
+              { step: "02", title: "Design", text: "We shape the brand, structure, and user experience." },
+              { step: "03", title: "Build", text: "We develop a fast, responsive, and conversion-focused site." },
+              { step: "04", title: "Launch", text: "We publish, test, and support your digital presence going forward." },
+            ].map((item) => (
+              <div key={item.step} className="rounded-2xl border border-border bg-surface p-6">
+                <span className="text-sm font-bold uppercase tracking-[0.2em] text-accent">{item.step}</span>
+                <h3 className="mt-4 text-xl font-semibold text-primary">{item.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted">{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ===== Pricing Section ===== */}
       <section id="pricing" className="bg-white px-6 py-20 sm:py-28">
         <div className="mx-auto max-w-6xl">
@@ -403,6 +548,14 @@ export default function Home() {
             </p>
           </div>
           <div className="mx-auto mt-12 max-w-xl">
+            <div className="mb-8 rounded-2xl border border-primary/10 bg-surface p-5 text-center">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">
+                Free Consultation
+              </p>
+              <p className="mt-2 text-base text-muted">
+                Tell us a little about your project and we&apos;ll help you plan the next step.
+              </p>
+            </div>
             <ContactForm />
             <div className="mt-10 flex flex-col items-center gap-3 text-sm text-muted sm:flex-row sm:justify-center">
               <span className="flex items-center gap-2">
