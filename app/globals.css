@@ -1,31 +1,31 @@
 @import "tailwindcss";
 
 :root {
-  --color-background: #ffffff;
+  --color-background: #f4f7fb;
   --color-foreground: #0f172a;
-  --color-primary: #1e3a5f;
-  --color-primary-light: #2d5a8e;
-  --color-accent: #f59e0b;
-  --color-accent-light: #fbbf24;
-  --color-muted: #64748b;
-  --color-surface: #f8fafc;
-  --color-border: #e2e8f0;
+  --color-primary: #132c45;
+  --color-primary-light: #20456d;
+  --color-accent: #f28b3d;
+  --color-accent-light: #f7b267;
+  --color-muted: #5f7086;
+  --color-surface: #ffffff;
+  --color-border: #dfe7f1;
   --color-card: #ffffff;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 .dark {
-  --color-background: #020817;
+  --color-background: #09111d;
   --color-foreground: #e2e8f0;
-  --color-primary: #dbeafe;
-  --color-primary-light: #bfdbfe;
-  --color-accent: #fbbf24;
-  --color-accent-light: #f59e0b;
-  --color-muted: #94a3b8;
-  --color-surface: #0f172a;
-  --color-border: #1e293b;
-  --color-card: #0b1120;
+  --color-primary: #edf6ff;
+  --color-primary-light: #bfdcff;
+  --color-accent: #f7b267;
+  --color-accent-light: #f28b3d;
+  --color-muted: #93a4bb;
+  --color-surface: #101b2d;
+  --color-border: #1a2b42;
+  --color-card: #0d1728;
 }
 
 @theme inline {
@@ -48,13 +48,15 @@ html {
 }
 
 body {
-  background: var(--color-background);
+  background:
+    radial-gradient(circle at top, rgba(242, 139, 61, 0.12), transparent 30%),
+    var(--color-background);
   color: var(--color-foreground);
   font-family: var(--font-sans, Arial, Helvetica, sans-serif);
 }
 
 ::selection {
-  background: rgba(30, 58, 95, 0.18);
+  background: rgba(242, 139, 61, 0.24);
 }
 
 @layer utilities {
