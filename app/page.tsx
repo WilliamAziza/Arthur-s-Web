@@ -168,7 +168,7 @@ export default function Home() {
       </section>
 
       {/* ===== Services Section ===== */}
-      <section id="services" className="bg-white px-6 py-20 sm:py-28">
+      <section id="services" className="bg-white px-6 py-20 sm:py-28 dark:bg-[#0b1422]">
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
@@ -267,7 +267,7 @@ export default function Home() {
       </section>
 
       {/* ===== About Section ===== */}
-      <section id="about" className="bg-surface px-6 py-20 sm:py-28">
+      <section id="about" className="bg-surface px-6 py-20 sm:py-28 dark:bg-[#0b1422]">
         <div className="mx-auto max-w-6xl">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             <div>
@@ -318,7 +318,7 @@ export default function Home() {
       </section>
 
       {/* ===== Why Choose Us ===== */}
-      <section id="why-us" className="bg-white px-6 py-20 sm:py-28">
+      <section id="why-us" className="bg-white px-6 py-20 sm:py-28 dark:bg-[#0b1422]">
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
@@ -370,7 +370,7 @@ export default function Home() {
       </section>
 
       {/* ===== Testimonials ===== */}
-      <section className="bg-surface px-6 py-20 sm:py-28">
+      <section className="bg-surface px-6 py-20 sm:py-28 dark:bg-[#0b1422]">
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
@@ -382,7 +382,7 @@ export default function Home() {
           </div>
 
           <div className="mt-14 grid gap-8 lg:grid-cols-3">
-            <div className="rounded-2xl border border-border bg-white p-8 shadow-sm">
+            <div className="rounded-2xl border border-border bg-white p-8 shadow-sm dark:bg-surface">
               <div className="flex gap-1 text-accent">
                 {[...Array(5)].map((_, index) => (
                   <svg key={index} className="h-5 w-5 fill-current" viewBox="0 0 20 20">
@@ -399,7 +399,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="rounded-2xl border border-border bg-white p-8 shadow-sm">
+            <div className="rounded-2xl border border-border bg-white p-8 shadow-sm dark:bg-surface">
               <div className="flex gap-1 text-accent">
                 {[...Array(5)].map((_, index) => (
                   <svg key={index} className="h-5 w-5 fill-current" viewBox="0 0 20 20">
@@ -416,7 +416,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="rounded-2xl border border-border bg-white p-8 shadow-sm">
+            <div className="rounded-2xl border border-border bg-white p-8 shadow-sm dark:bg-surface">
               <div className="flex gap-1 text-accent">
                 {[...Array(5)].map((_, index) => (
                   <svg key={index} className="h-5 w-5 fill-current" viewBox="0 0 20 20">
@@ -437,7 +437,7 @@ export default function Home() {
       </section>
 
       {/* ===== Process ===== */}
-      <section className="bg-white px-6 py-20 sm:py-28">
+      <section className="bg-white px-6 py-20 sm:py-28 dark:bg-[#0b1422]">
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
@@ -463,7 +463,7 @@ export default function Home() {
       </section>
 
       {/* ===== Pricing Section ===== */}
-      <section id="pricing" className="bg-white px-6 py-20 sm:py-28">
+      <section id="pricing" className="bg-white px-6 py-20 sm:py-28 dark:bg-[#0b1422]">
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
@@ -643,7 +643,7 @@ export default function Home() {
       </section>
 
       {/* ===== Contact Section ===== */}
-      <section id="contact" className="bg-white px-6 py-20 sm:py-28">
+      <section id="contact" className="bg-white px-6 py-20 sm:py-28 dark:bg-[#0b1422]">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
