@@ -26,38 +26,136 @@ export default function Home() {
       </header>
 
       {/* ===== Hero Section ===== */}
-      <section className="relative flex flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-surface to-blue-50 px-6 py-24 text-center sm:py-32">
-        <div className="relative z-10 max-w-3xl">
-          <span className="inline-block rounded-full bg-accent/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-accent">
-            IT Solutions &amp; Web Development
-          </span>
-          <h1 className="mt-6 text-4xl font-bold leading-tight tracking-tight text-primary sm:text-5xl lg:text-6xl">
-            We Build Websites That
-            <span className="text-accent"> Work for You</span>
-          </h1>
-          <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-muted">
-            From concept to launch, Arthur&apos;s Web delivers modern, fast, and
-            reliable websites tailored to your business needs. Let us bring your
-            vision online.
-          </p>
-          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <a
-              href="#contact"
-              className="rounded-full bg-primary px-8 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:bg-primary-light hover:shadow-xl"
-            >
-              Start Your Project
-            </a>
-            <a
-              href="#services"
-              className="rounded-full border border-border bg-white px-8 py-3 text-sm font-semibold text-primary transition-all hover:bg-surface"
-            >
-              See Our Services
-            </a>
+      <section className="relative overflow-hidden bg-gradient-to-br from-surface via-white to-blue-50 px-6 py-24 sm:py-32">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
+            <div className="relative z-10 text-center lg:text-left">
+              <span className="inline-block rounded-full bg-accent/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-accent">
+                IT Solutions &amp; Web Development
+              </span>
+              <h1 className="mt-6 text-4xl font-bold leading-tight tracking-tight text-primary sm:text-5xl lg:text-6xl">
+                Websites that help your business
+                <span className="text-accent"> look sharper and grow faster.</span>
+              </h1>
+              <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-muted lg:mx-0">
+                Arthur&apos;s Web designs and builds digital experiences that are modern,
+                conversion-focused, and built to support long-term growth.
+              </p>
+              <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start">
+                <a
+                  href="#contact"
+                  className="rounded-full bg-primary px-8 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:bg-primary-light hover:shadow-xl"
+                >
+                  Start Your Project
+                </a>
+                <a
+                  href="#services"
+                  className="rounded-full border border-border bg-white px-8 py-3 text-sm font-semibold text-primary transition-all hover:bg-surface"
+                >
+                  See Our Services
+                </a>
+              </div>
+
+              <div className="mt-10 flex flex-wrap items-center justify-center gap-6 text-sm text-muted lg:justify-start">
+                <div>
+                  <span className="block text-2xl font-bold text-primary">50+</span>
+                  <span>Projects</span>
+                </div>
+                <div>
+                  <span className="block text-2xl font-bold text-primary">99%</span>
+                  <span>Satisfaction</span>
+                </div>
+                <div>
+                  <span className="block text-2xl font-bold text-primary">24/7</span>
+                  <span>Support</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative mx-auto w-full max-w-md">
+              <div className="rounded-[28px] border border-border bg-white p-4 shadow-[0_30px_80px_rgba(15,23,42,0.12)]">
+                <div className="rounded-[22px] bg-gradient-to-br from-primary to-primary-light p-5 text-white">
+                  <div className="flex items-center justify-between text-xs uppercase tracking-[0.2em] text-white/80">
+                    <span>Launch Ready</span>
+                    <span>2026</span>
+                  </div>
+                  <div className="mt-8 rounded-2xl bg-white/10 p-4 backdrop-blur-sm">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <p className="text-sm text-white/80">Performance</p>
+                        <p className="mt-2 text-3xl font-bold">96%</p>
+                      </div>
+                      <div className="rounded-full bg-white/10 px-3 py-1 text-xs font-medium text-white/90">
+                        +24% growth
+                      </div>
+                    </div>
+                    <div className="mt-6 h-2 rounded-full bg-white/20">
+                      <div className="h-2 w-[78%] rounded-full bg-accent" />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                  <div className="rounded-2xl border border-border bg-surface p-4">
+                    <p className="text-xs uppercase tracking-[0.2em] text-muted">Offer</p>
+                    <p className="mt-2 text-lg font-semibold text-primary">Custom Websites</p>
+                  </div>
+                  <div className="rounded-2xl border border-border bg-surface p-4">
+                    <p className="text-xs uppercase tracking-[0.2em] text-muted">Focus</p>
+                    <p className="mt-2 text-lg font-semibold text-primary">SEO + UX</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
         {/* Decorative blobs */}
         <div className="pointer-events-none absolute -top-40 -right-40 h-80 w-80 rounded-full bg-accent/5 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-primary/5 blur-3xl" />
+      </section>
+
+      {/* ===== Featured Work ===== */}
+      <section className="bg-white px-6 py-20 sm:py-28">
+        <div className="mx-auto max-w-6xl">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+              Selected Work
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-muted">
+              Practical, polished, and built to help businesses stand out online.
+            </p>
+          </div>
+
+          <div className="mt-14 grid gap-8 lg:grid-cols-3">
+            <div className="overflow-hidden rounded-2xl border border-border bg-surface shadow-sm">
+              <div className="h-48 bg-gradient-to-br from-slate-200 to-slate-300" />
+              <div className="p-6">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">Brand Website</p>
+                <h3 className="mt-3 text-xl font-semibold text-primary">Professional service site</h3>
+                <p className="mt-3 text-muted">Clean design, faster lead generation, and a clearer brand story.</p>
+              </div>
+            </div>
+
+            <div className="overflow-hidden rounded-2xl border border-border bg-surface shadow-sm">
+              <div className="h-48 bg-gradient-to-br from-blue-100 to-indigo-200" />
+              <div className="p-6">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">Landing Page</p>
+                <h3 className="mt-3 text-xl font-semibold text-primary">Campaign-focused funnel</h3>
+                <p className="mt-3 text-muted">Built to convert attention into inquiries with clear messaging and CTAs.</p>
+              </div>
+            </div>
+
+            <div className="overflow-hidden rounded-2xl border border-border bg-surface shadow-sm">
+              <div className="h-48 bg-gradient-to-br from-amber-100 to-orange-200" />
+              <div className="p-6">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">Business Platform</p>
+                <h3 className="mt-3 text-xl font-semibold text-primary">Modern web app experience</h3>
+                <p className="mt-3 text-muted">Functional, scalable digital systems designed around your business workflows.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* ===== Services Section ===== */}
